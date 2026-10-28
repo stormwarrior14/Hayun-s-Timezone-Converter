@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hayun's Timezone Converter</title>
+    <link rel="stylesheet" href="sttyle.css">
+</head>
+<body>
+    <img src="hplogo.png" alt="Logo" class="corner-logo left-logo">
+
+    <img src="tzclogo-close.png" alt="Logo" class="top-logo">
+
+    <!-- <img src="tzclogo-far.png" alt="Logo" class="corner-logo right-logo"> -->
+
+
+    <div class="tung-tung-tung-box">
+        <h1 class="ahhhhhhhhhhhhhh">
+            <img src="tzclogo-far.png" alt="Timezone Converter Logo" class="logo"> Timezone Converter
+        </h1>
+
+        <p id="localTimezone"></p>
+
+        <div class="section">
+            <label>Local Time</label>
+
+            <div class="time-selectors">
+                <select id="hour"></select>
+                <select id="minute"></select>
+                <select id="ampm">
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="section">
+            <label>Select Country</label>
+
+            <select id="country">
+                <option value="">-- Select Country --</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <label>Or Select Timezone</label>
+
+            <select id="timezone">
+                <option value="">-- Select Timezone --</option>
+            </select>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <div id="result"></div>
+         <a href = https://forbrains.co.uk/international_tools/earth_timezones><h3>Here's a list of all 40 timezones</h3></a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

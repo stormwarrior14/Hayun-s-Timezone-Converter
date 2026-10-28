@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        -45deg,
+        #1e3c72,
+        #2a5298,
+        #4b6cb7,
+        #182848
+    );
+
+    background-size:400% 400%;
+    animation:bgAnimation 12s ease infinite;
+}
+
+@keyframes bgAnimation{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+.tung-tung-tung-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    width:500px;
+    max-width:90%;
+    box-shadow:0 0 20px rgba(0,0,0,0.25);
+    margin-top: 140px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.ahhhhhhhhhhhhhh{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+.top-logo{
+    position:fixed;
+    bottom:600px;
+    left:50%;
+    transform:translateX(-50%);
+    width:400px;
+    height:auto;
+    z-index:1;
+}
+
+.corner-logo{
+    position:fixed;
+    top:20px;
+    width:120px;
+    height:auto;
+    z-index:1;
+}
+
+.left-logo{
+    left:20px;
+}
+
+.right-logo{
+    right:20px;
+}
+
+#localTimezone{
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#2a5298;
+}
+
+.section{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+select{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.time-selectors{
+    display:flex;
+    gap:10px;
+}
+
+.time-selectors select{
+    flex:1;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#2a5298;
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1e3c72;
+}
+
+#result{
+    margin-top:20px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
